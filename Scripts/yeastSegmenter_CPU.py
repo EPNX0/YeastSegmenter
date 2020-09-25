@@ -27,8 +27,8 @@ python3 /home/basar/Personal/Erich/Mask_RCNN/samples/yeast/yeast.py detect --dat
 import matplotlib
 matplotlib.use('Agg')
 import os, sys, pandas as pd, numpy as np
-#sys.path.append('/home/basar/Personal/Erich/site-packages')  #for local purposes
-#sys.path.remove('/usr/lib/python3/dist-packages')  #for local purposes
+sys.path.append('/home/basar/Personal/Erich/site-packages')  #for local purposes
+sys.path.remove('/usr/lib/python3/dist-packages')  #for local purposes
 
 
 import imageio
