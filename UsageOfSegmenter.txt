@@ -1,0 +1,18 @@
+Sooo... what to do:
+
+1. You can either generate your own folder for the datasets (images) or use the given folder (datasets/dataset_detect) to let your images being detected.
+1.1 If you want your own folder, you need to have a following path for the detection-folder: ../$SOMETHING/dataset_detect   where $SOMETHING is just some name. More important is the name of the folder for the images that need to be detected ( "dataset_detect").
+
+2. Use the following command to run the detection: #  Segmentation without further classification (detects the most cells)
+
+Segmentation on CPU: python3 /home/basar/Personal/Erich/Yeastcell_segmenter/Scripts/yeastSegmenter_CPU.py detect --dataset=/home/basar/Personal/Erich/Yeastcell_segmenter/datasets --weights=/home/basar/Personal/Erich/Yeastcell_segmenter/Models/1ClassModel.h5 <--logs=> <--savedir=>
+
+Segmentation on GPU: python3 /home/basar/Personal/Erich/Yeastcell_segmenter/Scripts/yeastSegmenter_GPU.py detect --dataset=/home/basar/Personal/Erich/Yeastcell_segmenter/datasets --weights=/home/basar/Personal/Erich/Yeastcell_segmenter/Models/1ClassModel.h5 <--logs=> <--savedir=>
+
+<--logs=> <--savedir=>: Those two arguments are optional. Both need to be paths, but they do not have to exist. They do have default paths, though.
+ 
+default log path: /home/basar/Personal/Erich/Yeastcell_segmenter/logs/yeast/
+default savedir path: /home/basar/Personal/Erich/Yeastcell_segmenter/SAVEDIR/
+
+Path to Model: /home/basar/Personal/Erich/Yeastcell_segmenter/Models/1ClassModel.h5
+
